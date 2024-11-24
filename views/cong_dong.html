@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cộng Đồng</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="/" class="logo">Dự Án Xanh</a>
+        <nav class="navbar">
+            <a href="/">Trang Chủ</a>
+            <a href="/album">Album</a>
+            <a href="/du-an-xanh">Dự Án Xanh</a>
+            <a href="/cong-dong" class="active">Cộng Đồng</a>
+        </nav>
+    </header>
+
+    <!-- Giới thiệu cộng đồng -->
+    <section class="community-intro">
+        <div class="container">
+            <h1>Cộng Đồng Dự Án Xanh</h1>
+            <p>Cùng nhau chung tay bảo vệ môi trường. Tham gia và góp sức cho một tương lai bền vững!</p>
+        </div>
+    </section>
+
+    <!-- Hoạt động cộng đồng -->
+    <section class="community-events">
+        <h2>Hoạt Động Sắp Tới</h2>
+        <div class="events-container">
+            <div class="event-card">
+                <h3>Chiến Dịch Làm Sạch Biển</h3>
+                <p>Thời gian: 15/12/2024</p>
+                <p>Địa điểm: Bãi biển Nha Trang</p>
+            </div>
+            <div class="event-card">
+                <h3>Trồng 1.000 Cây Xanh</h3>
+                <p>Thời gian: 20/12/2024</p>
+                <p>Địa điểm: Công viên Gia Định</p>
+            </div>
+            <div class="event-card">
+                <h3>Hội Thảo Giảm Rác Thải Nhựa</h3>
+                <p>Thời gian: 25/12/2024</p>
+                <p>Địa điểm: Hội trường Xanh</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biểu mẫu tham gia -->
+    <section class="community-form">
+        <h2>Tham Gia Cộng Đồng</h2>
+        <form action="/submit" method="POST">
+            <label for="name">Tên của bạn:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Thông điệp của bạn:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Gửi</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Dự Án Xanh. All rights reserved.</p>
+    </footer>
+</body>
+</html>
