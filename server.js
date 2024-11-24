@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = 4000;
+const port = 3000;
 const multer = require('multer');
 
 // Cấu hình thư mục public cho các tài nguyên tĩnh
@@ -103,5 +103,9 @@ app.get('/cong-dong', (req, res) => {
 
 // API Routes
 app.use('/api', require('./routes/api'));
-
+// Khởi chạy server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
+});
 
