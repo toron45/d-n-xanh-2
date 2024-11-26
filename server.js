@@ -24,7 +24,7 @@ app.get('/cong-dong', (req, res) => {
 });
 
 // Khởi chạy server
-const PORT = 4000;
+const PORT = process.env.PORT || 3000; // Sử dụng PORT từ môi trường hoặc mặc định là 3000
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);
 });
@@ -36,4 +36,5 @@ app.get('/api/projects', (req, res) => {
     ];
     res.json(projects);
 });
+app.use(express.static(path.join(__dirname, 'public')));
 

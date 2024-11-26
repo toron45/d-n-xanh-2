@@ -501,3 +501,33 @@ footer {
 .upload-form .btn:hover {
     background-color: #e73e48;
 }
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+
+.home-content {
+    flex: 1;
+    text-align: center;
+}
+
+.home-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.home-img img {
+    width: 400px; /* Hoặc điều chỉnh kích thước phù hợp */
+    height: auto;
+}
+.home {
+    display: flex;
+    flex-direction: row; /* Đặt các phần tử cùng hàng */
+    align-items: center; /* Căn giữa theo trục dọc */
+    justify-content: center; /* Căn giữa theo trục ngang */
+    gap: 20px;
+}
